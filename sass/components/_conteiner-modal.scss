@@ -9,12 +9,12 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-hidden {
+.backdrop--hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop-hidden .modal {
+.backdrop--hidden .modal {
   transform: scale(1.1) translate(-50%, -50%);
 }
 
@@ -55,8 +55,8 @@
   transition-duration: $time;
   transition-timing-function: $cubic;
 
-  &-close:focus,
-  &-close:hover {
+  &:focus,
+  &:hover {
     fill: $blue-text;
   }
 }
@@ -75,16 +75,16 @@
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+}
 
-  .&-label {
-    margin-bottom: 4px;
-    color: $pepel-text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-  }
+.form-info__label {
+  margin-bottom: 4px;
+  color: $pepel-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
 }
 
 .form-info__conteiner {
@@ -105,15 +105,15 @@
   transition-timing-function: $cubic;
   outline: none;
 
-  &-input:focus + &-icon,
-  &-input:hover + &-icon {
-    fill: $blue-text;
-  }
-
-  &-input:focus,
-  &-input:hover {
+  &:focus,
+  &:hover {
     border: 1px solid $blue-text;
   }
+}
+
+.form-info__input:focus + .form-info__icon,
+.form-info__input:hover + .form-info__icon {
+  fill: $blue-text;
 }
 
 .form-info__icon {
@@ -148,8 +148,8 @@
   outline: none;
 }
 
-.form-info:focus > &-textarea,
-.form-info:hover > &-textarea {
+.form-info:focus > .form-info__textarea,
+.form-info:hover > .form-info__textarea {
   border: 1px solid $blue-text;
 }
 
@@ -171,12 +171,12 @@
   color: $blue-text;
 }
 
-.conteiner-checkbox__label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
+// .conteiner-checkbox__label {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   cursor: pointer;
+// }
 
 .conteiner-checkbox__input:checked + .conteiner-checkbox__icon {
   background-color: $blue-text;
@@ -198,6 +198,7 @@
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+  cursor: pointer;
 }
 
 .conteiner-checkbox__button {
@@ -225,8 +226,8 @@
   transition-duration: $time;
   transition-timing-function: $cubic;
 
-  &-button:focus,
-  &-button:hover {
+  &:focus,
+  &:hover {
     background-color: $button-clik;
   }
 }

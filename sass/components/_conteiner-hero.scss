@@ -22,38 +22,43 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+}
+
+.container-overlay {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
+}
 
-  &-name {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    color: $white-text;
-    max-width: 696px;
-    margin: auto;
-  }
+.hero__name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  color: $white-text;
+  max-width: 696px;
+  margin: auto;
+}
 
-  &-current {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    color: $white-text;
-    background: $blue-text;
+.hero__current {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: $white-text;
+  background: $blue-text;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 200px;
-    margin-top: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-  }
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
