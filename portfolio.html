@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
@@ -18,73 +19,73 @@
     <!-- Шапка-->
 
     <header class="header">
-        <div class="header__container">
-            <nav class="header__main--nav">
-                <a class="header__logo">Web<span class="header__text">Studio</span></a>
+        <div class="container header__container">
     
-                <ul class="header__social--links">
-                    <li class="header__item"><a href="./index.html" class="header__link">Студия</a></li>
-                    <li class="header__item"><a href="" class="header__link--current">Портфолио</a></li>
-                    <li class="header__item"><a href="" class="header__link">Контакти</a></li>
+            <a class="logo header__logo">Web<span class="logo__text">Studio</span></a>
+    
+            <nav class="main-nav">
+                <ul class="navigation main-nav__navigation">
+                    <li class="main-nav__item"><a href="./index.html" class="main-nav__link">Студия</a></li>
+                    <li class="main-nav__item"><a href="" class="main-nav__current">Портфолио</a></li>
+                    <li class="main-nav__item"><a href="" class="main-nav__link">Контакти</a></li>
                 </ul>
-            
-    
-        <ul class="header__social--info">
-            <li class="header__item">
-                <a href="mailto:info@example.com" class="header__contacts--mail" aria-label="envelope">
-                    <svg class="header__icon" width="16" height="12">
-                        <use href="./images/iconssvg/symbol-defs.svg#icon-envelope-hover"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li class="header__item">
-                <a href="tel:+380961111111" class="header__contacts--tel" aria-label="smartphone">
-                    <svg class="header__icon" width="10" height="16">
-                        <use href="./images/iconssvg/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-        </ul>
             </nav>
-        </div>
+            
+    <ul class="navigation info-contacts">
+        <li class="info-contacts__item">
+            <a href="mailto:info@example.com" class="info-contacts__mail" aria-label="envelope">
+                <svg class="info-contacts__icon" width="16" height="12">
+                    <use href="./images/iconssvg/symbol-defs.svg#icon-envelope-hover"></use>
+                </svg>
+                info@devstudio.com</a>
+        </li>
+        <li class="info-contacts__item">
+            <a href="tel:+380961111111" class="info-contacts__tel" aria-label="smartphone">
+                <svg class="info-contacts__icon" width="10" height="16">
+                    <use href="./images/iconssvg/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+        </li>
+    </ul>
+    </div>
     </header>
 
     <!--Портфолио-->
     <main>
 
         <section class="portfolio">
-            <div class="conteiner-portfolio">
-            <h1 class="none">Портфолио</h1>
+            <div class="conteiner__portfolio">
+            <h1 class="conteiner__none">Портфолио</h1>
 
-            <ul class="list-button">
-                <li class="section-button">
-                    <a class="list-list" href=""><button class="section-btn">Все</button></a>
+            <ul class="conteiner__list--button">
+                <li class="conteiner__section--button">
+                    <a class="conteiner__list--list" href=""><button class="conteiner__section--btn">Все</button></a>
                 </li>
 
-                <li class="section-button">
-                    <a class="list-list" href=""><button class="section-btn">Веб-сайты</button></a>
+                <li class="conteiner__section-button">
+                    <a class="conteiner__list--list" href=""><button class="conteiner__section--btn">Веб-сайты</button></a>
                 </li>
 
-                <li class="section-button">
-                    <a class="list-list" href=""><button class="section-btn">Приложения</button></a>
+                <li class="conteiner__section-button">
+                    <a class="conteiner__list--list" href=""><button class="conteiner__section--btn">Приложения</button></a>
                 </li>
 
-                <li class="section-button">
-                    <a class="list-list" href=""><button class="section-btn">Дизайн</button></a>
+                <li class="conteiner__section--button">
+                    <a class="conteiner__list--list" href=""><button class="conteiner__section--btn">Дизайн</button></a>
                 </li>
 
-                <li class="section-button">
-                    <a class="list-list" href=""><button class="section-btn">Маркетинг</button></a>
+                <li class="conteiner__section-button">
+                    <a class="list--list" href=""><button class="conteiner__section--btn">Маркетинг</button></a>
                 </li>
             </ul>
 
-            <ul class="list-portfolio">
-                <li class="card-portfolio">
-                    <a  class="art-card" href="">
-                        <div class="card-list">
+            <ul class="conteiner__list--portfolio">
+                <li class="conteiner__card--portfolio">
+                    <a  class="conteiner__art--card" href="">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img.jpg" alt="ноутбук" />
-                        <div class="portfolio-overlay">
-                        <p class="text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                        <div class="conteiner__portfolio--overlay">
+                        <p class="conteiner__text--overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                             платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
@@ -92,138 +93,138 @@
                         </div>
 
 
-                        <div class="card-item">
-                            <h2 class="portfolio-info">Технокряк</h2>
-                            <p class="portfolio-finger">Веб-сайт</p>
+                        <div class="conteiner__card--item">
+                            <h2 class="conteiner__portfolio--info">Технокряк</h2>
+                            <p class="conteiner__portfolio--finger">Веб-сайт</p>
                         </div>
                         
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img(1).jpg" alt="баскетболисты" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>
                     
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Постер New Orlean vs Golden Star</h2>
-                            <p class="portfolio-finger">Дизайн</p>
+                        <div class="conteiner__card--item">
+                            <h2 lang="en" class="conteiner__portfolio--info">Постер New Orlean vs Golden Star</h2>
+                            <p class="conteiner__portfolio--finger">Дизайн</p>
                         </div>
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img(2).jpg" alt="марка" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>
                    
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Ресторан Seafood</h2>
-                            <p class="portfolio-finger">Приложение</p>
+                        <div class="conteiner__card--item">
+                            <h2 lang="en" class="conteiner__portfolio--info">Ресторан Seafood</h2>
+                            <p class="conteiner__portfolio--finger">Приложение</p>
                         </div>
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img(3).jpg" alt="наушники" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>                    
 
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Проект Prime</h2>
-                            <p class="portfolio-finger">Маркетинг</p>
+                        <div class="conteiner__card--item">
+                            <h2 lang="en" class="conteiner__portfolio--info">Проект Prime</h2>
+                            <p class="conteiner__portfolio--finger">Маркетинг</p>
                         </div>
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img(4).jpg" alt="две коробки" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>
                     
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Проект Boxes</h2>
-                            <p class="portfolio-finger">Веб-сайт</p>
+                        <div class="conteiner__card--item">
+                            <h2 lang="en" class="conteiner__portfolio--info">Проект Boxes</h2>
+                            <p class="conteiner__portfolio--finger">Веб-сайт</p>
                         </div>
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__car--list">
                             <img src="./images/portfolio.img/img(5).jpg" alt="монитор компьютера" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>
 
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Inspiration has no Borders</h2>
-                            <p class="portfolio-finger">Веб-сайт</p>
+                        <div class="card--item">
+                            <h2 lang="en" class="portfolio--info">Inspiration has no Borders</h2>
+                            <p class="portfolio--finger">Веб-сайт</p>
                         </div>
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img(6).jpg" alt="журнал" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>
 
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Издание Limited Edition</h2>
-                            <p class="portfolio-finger">Дизайн</p>
+                        <div class="conteiner__card--item">
+                            <h2 lang="en" class="conteiner__portfolio--info">Издание Limited Edition</h2>
+                            <p class="conteiner__portfolio--finger">Дизайн</p>
                         </div>
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img(7).jpg" alt="бирка" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>                    
 
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Проект LAB</h2>
-                            <p class="portfolio-finger">Маркетинг</p>
+                        <div class="conteiner__card--item">
+                            <h2 lang="en" class="conteiner__portfolio--info">Проект LAB</h2>
+                            <p class="conteiner__portfolio--finger">Маркетинг</p>
                         </div>
                     </a>
                 </li>
 
-                <li class="card-portfolio">
-                    <a href="" class="art-card">
-                        <div class="card-list">
+                <li class="conteiner__card--portfolio">
+                    <a href="" class="conteiner__art--card">
+                        <div class="conteiner__card--list">
                             <img src="./images/portfolio.img/img(8).jpg" alt="работа за ноутбуком" />
-                        <div class="portfolio-overlay">
-                            <p class="text-overlay">Lorem</p>
+                        <div class="conteiner__portfolio--overlay">
+                            <p class="conteiner__text--overlay">Lorem</p>
                         </div>
                         </div>                    
 
-                        <div class="card-item">
-                            <h2 lang="en" class="portfolio-info">Growing Business</h2>
-                            <p class="portfolio-finger">Приложение</p>
+                        <div class="conteiner__card--item">
+                            <h2 lang="en" class="conteiner__portfolio--info">Growing Business</h2>
+                            <p class="conteiner__portfolio--finger">Приложение</p>
                         </div>
                     </a>
                 </li>
@@ -235,76 +236,76 @@
     <!-- Подвал-->
 
 <footer class="footer">
-    <div class="conteiner-info">
-        <div class="conteiner-footer">
-            <a class="logo-footer">Web<span class="span">Studio</span></a>
+    <div class="conteiner__info">
+        <div class="conteiner__footer">
+            <a class="conteiner__logo--footer">Web<span class="conteiner__label">Studio</span></a>
 
-            <address class="address-link">
+            <address class="conteiner__address--link">
 
-                <p class="link-info address">г. Киев, пр-т Леси Украинки, 26</p>
+                <p class="conteiner__link--info conteiner__address">г. Киев, пр-т Леси Украинки, 26</p>
 
-                <p class="link-info">
-                    <a href="mailto:info@example.com" class="info">info@example.com</a>
+                <p class="conteiner__link--info">
+                    <a href="mailto:info@example.com" class="conteiner__info">info@example.com</a>
                 </p>
 
-                <p class="link-info">
-                    <a href="tel:+380991111111" class="info">+38 099 111 11 11</a>
+                <p class="conteiner__link--info">
+                    <a href="tel:+380991111111" class="conteiner__info">+38 099 111 11 11</a>
                 </p>
             </address>
         </div>
 
-        <div class="cocial-icons">
-            <h3 class="info-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
+        <div class="conteiner__cocial--icons">
+            <h3 class="conteiner__info--text">ПРИСОЕДИНЯЙТЕСЬ</h3>
 
-            <ul class="list-info">
-                <li class="icon-list">
-                    <a href="" class="cocial-info">
-                        <svg class="icons-svg" width="20" height="20">
+            <ul class="conteiner__list--info">
+                <li class="conteiner__icon--list">
+                    <a class="conteiner__cocial--info" href="">
+                        <svg class="conteiner__icons--svg" width="20" height="20">
                             <use href="./images/iconssvg/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
 
-                <li class="icon-list">
-                    <a href="" class="cocial-info">
-                        <svg class="icons-svg" width="20" height="20">
+                <li class="conteiner__icon--list">
+                    <a class="conteiner__cocial--info" href="">
+                        <svg class="conteiner__icons--svg" width="20" height="20">
                             <use href="./images/iconssvg/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
 
-                <li class="icon-list">
-                    <a href="" class="cocial-info">
-                        <svg class="icons-svg" width="20" height="20">
+                <li class="conteiner__icon--list">
+                    <a class="conteiner__cocial--info" href="">
+                        <svg class="conteiner__icons--svg" width="20" height="20">
                             <use href="./images/iconssvg/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
 
-                <li class="icon-list">
-                    <a href="" class="cocial-info">
-                        <svg class="icons-svg" width="20" height="20">
+                <li class="conteiner__icon--list">
+                    <a class="conteiner__cocial--info" href="">
+                        <svg class="conteiner__icons--svg" width="20" height="20">
                             <use href="./images/iconssvg/symbol-defs.svg#icon-linkedin"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
         </div>
-        
-        <form>
-            <h3 class="text-info">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-            <div class="form">
+
+        <div>
+            <h3 class="conteiner__text--info">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+            <div class="conteiner__info--form">
                 <label>
-                    <input class="email" name="email" type="text" placeholder="E-mail" />
+                    <input class="conteiner__email" name="email" type="text" placeholder="E-mail" />
                 </label>
-                <button class="button" type="submit">
-                    <span class="text-foot">Подписаться</span>
-                    <svg class="telega" width="24" height="24">
+                <button class="conteiner__button" type="submit">
+                    <span class="conteiner__text--foot">Подписаться</span>
+                    <svg class="conteiner__telega" width="24" height="24">
                         <use href="./images/iconssvg/symbol-defs.svg#icon-icon-send-1"></use>
                     </svg>
                 </button>
             </div>
-        </form>
+        </div>
     </div>
 </footer>
 

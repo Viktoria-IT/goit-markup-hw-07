@@ -1,0 +1,220 @@
+.footer {
+  background: $background-section-one;
+}
+
+.conteiner__info {
+  display: flex;
+  align-items: baseline;
+  margin: auto;
+  max-width: 1200px;
+  padding: 60px 15px;
+}
+
+.conteiner__cocial--icons {
+  margin-left: 70px;
+}
+
+.conteiner__logo--footer {
+  color: $blue-text;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.conteiner__label {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $white-text;
+}
+
+.conteiner__info {
+  background: $background-section-one;
+  color: $footer-adress;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.conteiner__address--link {
+  margin-top: 20px;
+}
+
+.conteiner__address--link > .conteiner__link--info:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.conteiner__address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $white-text;
+}
+
+.conteiner__info--text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+}
+
+.conteiner__list--info {
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+  cursor: pointer;
+  fill: currentColor;
+}
+
+.conteiner__list--info:focus .conteiner__icons--svg {
+  color: $blue-text;
+}
+
+.conteiner__list--info > .conteiner__icon--list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.conteiner__icon--list {
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: $header-backgraund;
+  cursor: pointer;
+}
+
+.conteiner__icons--svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $white-text;
+  transition-property: fill;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.conteiner__list--info > .conteiner__cocial--info:hover,
+.conteiner__list--info > .conteiner__cocial--info:focus {
+  background-color: $blue-text;
+}
+
+.conteiner__list--info > .conteiner__icon--list:hover,
+.conteiner__list--info > .conteiner__icon--list:focus {
+  background-color: $blue-text;
+}
+
+.conteiner__icon--list .conteiner__cocial--info:focus,
+.conteiner__icon--list .conteiner__cocial--info:hover {
+  fill: $blue-text;
+}
+
+/* .cocial-info:focus {
+  fill: var(--blue-text);
+} */
+
+.conteiner__cocial--info {
+  transition-property: backgraund-color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.conteiner__info--form {
+  display: flex;
+  margin-left: 93px;
+}
+
+.conteiner__text--foot {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-text;
+  margin-right: 10px;
+}
+
+.tconteiner__text--info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+  margin-left: 93px;
+}
+
+.conteiner__button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: $blue-text;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transition-property: backgraund-color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.conteiner__email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-top: 20px;
+
+  color: $white-text;
+  background-color: $background-section-one;
+  border: 1px solid $backgraund-border;
+  border-radius: 4px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  cursor: pointer;
+  transition-property: backgraund-color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.conteiner__email:focus-within,
+.conteiner__email:hover,
+.conteiner__email:active {
+  border: 1px solid $blue-text;
+  border-radius: 4px;
+}
+
+.conteiner__button:focus,
+.conteiner__button:hover {
+  border: 1px solid $blue-text;
+  border-radius: 4px;
+}
+
+.conteiner__telega {
+  fill: $white-text;
+}

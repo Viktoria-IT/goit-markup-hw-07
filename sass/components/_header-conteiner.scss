@@ -3,6 +3,7 @@
 }
 
 .header__container {
+  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -11,14 +12,8 @@
   align-items: center;
 }
 
-.header__main--nav {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
-}
-
-.header__logo {
-  color: $blue-text;
+.logo {
+  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -29,20 +24,25 @@
   padding-bottom: 24px;
 }
 
-.header__text {
+.header__logo {
+  margin-right: 93px;
+  color: $blue-text;
+}
+
+.logo__text {
   font-family: Raleway, sans-serif;
   color: $black-text;
   letter-spacing: 0.03em;
 }
 
-.header__social--links {
+.navigation {
   display: flex;
   margin: 0;
   margin-left: 93px;
 }
 
-.header__social--links .header__links::after,
-.&-social--links .&-link--current::after {
+.main-nav__navigation .main-nav__links::after,
+.main-nav__navigation .main-nav__current::after {
   content: '';
   display: flex;
   width: 100%;
@@ -54,13 +54,13 @@
   background-color: $blue-text;
   transform: translateY(1px);
   transition: fill $time $cubic;
-
-  .&-social--links > .&-item:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 
-.header__social-links .header__link {
+.main-nav__navigation > .main-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-nav__navigation .main-nav__link {
   color: $black-text;
   font-style: normal;
   font-weight: 500;
@@ -69,18 +69,22 @@
   transition-property: color;
   transition-duration: $time;
   transition-timing-function: $cubic;
-
-  .&-social--links .&-link:hover,
-  .&-social--links .&-link:focus {
-    color: $blue-text;
-    background: $white-text;
-    text-decoration: none;
-    transform: translateY(1px);
-  }
 }
 
-.header__links,
-.header__link {
+.main-nav__navigation .main-nav__link:hover,
+.main-nav__navigation .main-nav__link:focus {
+  color: $blue-text;
+  background: $white-text;
+  text-decoration: none;
+  transform: translateY(1px);
+}
+
+.main-nav__navigation .main-nav__current {
+  color: $blue-text;
+}
+
+.main-nav__links,
+.main-nav__link {
   font-style: normal;
   font-weight: 500;
   cursor: pointer;
@@ -90,7 +94,7 @@
   transition: fill $time $cubic;
 }
 
-.header__link--current {
+.main-nav__current {
   font-style: normal;
   font-weight: 500;
   cursor: pointer;
@@ -99,29 +103,29 @@
   padding-bottom: 31px;
 }
 
-.header__social--info {
+.info-contacts {
   display: flex;
   margin-left: auto;
-
-  .&-item .&-icon {
-    margin-right: 10px;
-    align-items: center;
-    fill: $pepel-text;
-    transition-property: fill;
-    transition-duration: $time;
-    transition-timing-function: $cubic;
-  }
-
-  .&-social--info > .&-item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  .&-icon:focus {
-    fill: $blue-text;
-  }
 }
 
-.header__contacts--mail {
+.info-contacts__item .info-contacts__icon {
+  margin-right: 10px;
+  align-items: center;
+  fill: $pepel-text;
+  transition-property: fill;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.info-contacts > .info-contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.info-contacts__icon:focus {
+  fill: $blue-text;
+}
+
+.info-contacts__mail {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -133,7 +137,7 @@
   cursor: pointer;
 }
 
-.header__contacts--tel {
+.info-contacts__tel {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -144,31 +148,31 @@
   color: $pepel-text;
 }
 
-.header__item .header__contacts--mail:focus,
-.&-item .&-contacts--tel:focus {
+.info-contacts__item .info-contacts__mail:focus,
+.info-contacts__item .info-contacts__tel:focus {
   color: $blue-text;
 }
 
-.header__item .header__contacts--mail,
-.&-item .&-contacts--tel {
+.info-contacts__item .info-contacts__mail,
+.info-contacts__item .info-contacts__tel {
   transition-property: color;
   transition-duration: $time;
   transition-timing-function: $cubic;
 }
 
-.header__social--info .header__contacts--mail:focus .header__icon,
-.&-social--info .&-contacts--tel:focus .&-icon {
+.info-contacts .info-contacts__mail:focus .info-contacts__icon,
+.info-contacts .info-contacts__tel:focus .info-contacts__icon {
   fill: $blue-text;
 }
 
-.header__social--info .header__item:hover .header__contacts--mail,
-.&-social--info .&-item:focus .&-contacts--mail,
-.&-social--info .&-item:hover .&-contacts--tel,
-.&-social--info .&-item:focus .&-contacts--tel {
+.info-contacts .info-contacts__item:hover .info-contacts__mail,
+.info-contacts .info-contacts__item:focus .info-contacts__mail,
+.info-contacts .info-contacts__item:hover .info-contacts__tel,
+.info-contacts .info-contacts__item:focus .info-contacts__tel {
   color: $blue-text;
 }
 
-.header__social--info .header__item:hover .header__icon,
-.&-social--info .&-item:focus .&-icon {
+.info-contacts .info-contacts__item:hover .info-contacts__icon,
+.info-contacts .info-contacts__item:focus .info-contacts__icon {
   fill: $blue-text;
 }
