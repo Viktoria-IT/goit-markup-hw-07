@@ -1,13 +1,13 @@
-.conteiner__none {
+.conteiner-none {
   display: none;
 }
 
 .portfolio {
-  padding-top: 92px;
-  padding-bottom: 92px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.conteiner__portfolio {
+.conteiner {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -15,79 +15,82 @@
   margin-right: auto;
 }
 
-.conteiner__list--button {
+.list-button {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
-
-  &-list-button > &-section-button:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  &-list-button &-section-btn {
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 11px 22px;
-  }
-
-  &-section-button {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    background: $background-section-four;
-    color: $black-text;
-    border-radius: 4px;
-    transition-property: color, background-color, box-shadow;
-    transition-duration: $time;
-    transition-timing-function: $cubic;
-  }
-
-  &-section-button &-section-btn:hover,
-  &-section-button &-section-btn:focus {
-    color: $white-text;
-    background: $blue-text;
-    cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-property: color, background-color, box-shadow;
-    transition-duration: $time;
-    transition-timing-function: $cubic;
-  }
-
-  &-list-list:focus &-section-button {
-    background-color: $blue-text;
-  }
-
-  &-section-btn {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-  }
 }
+
+.list-button > .list-button__title:not(:last-child) {
+  margin-right: 8px;
+}
+
+.list-button .list-button__btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 11px 22px;
+}
+
+.list-button__btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  background: $background-section-four;
+  color: $black-text;
+  border-radius: 4px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.list-button__title .list-button__btn:hover,
+.list-button__title .list-button__btn:focus {
+  color: $white-text;
+  background: $blue-text;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+}
+
+.list-button__list:focus .list-button__btn {
+  background-color: $blue-text;
+}
+
+.list-button__btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+// card-portfolio
 
 .conteiner__list--portfolio {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
+  margin-top: 30px;
   margin-bottom: 0;
   padding: 0;
+}
 
-  &-list-portfolio > &-card-portfolio {
-    border: 1px solid $border-card;
+.conteiner__card--portfolio {
+  border: 1px solid $border-card;
 
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  text-decoration: none;
 
-    transition-property: box-shadow;
-    transition-duration: $time;
-    transition-timing-function: $cubic;
-  }
+  transition-property: box-shadow;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
 }
 
 .conteiner__card--item {
@@ -102,6 +105,7 @@
   letter-spacing: 0.06em;
   color: $black-text;
   background: $white-list;
+  text-decoration: none;
 }
 
 .conteiner__portfolio--finger {
@@ -112,6 +116,7 @@
   letter-spacing: 0.03em;
   color: $pepel-text;
   background: $white-list;
+  text-decoration: none;
 
   margin-top: 4px;
 }
