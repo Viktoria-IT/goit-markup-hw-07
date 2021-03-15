@@ -1,4 +1,4 @@
-.conteiner__team {
+.conteiner-team {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -9,7 +9,7 @@
   background: $background-section-four;
 }
 
-.conteiner__main--team {
+.text {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -20,7 +20,7 @@
   margin-bottom: 50px;
 }
 
-.conteiner__team--item {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -29,7 +29,8 @@
   margin-bottom: 0;
 }
 
-.conteiner__team--images {
+.team__images {
+  width: 270px;
   background: $white-list;
   margin-right: 30px;
   flex-basis: calc(100% / 4 - 30px);
@@ -38,12 +39,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.conteiner__team--list {
+.team__title {
   text-align: center;
   padding: 30px 32px;
 }
 
-.conteiner__team {
+.team__text {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -53,7 +54,7 @@
   margin-bottom: 10px;
 }
 
-.conteiner__team--card {
+.team__card {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -63,20 +64,21 @@
   margin-bottom: 16px;
 }
 
-.conteiner__cocial--link {
+.cocial-link {
   display: flex;
+  padding-left: 0;
 }
 
-.conteiner__cocial--list {
+.cocial-link__list {
   margin-right: 10px;
   border-radius: 50%;
 }
 
-.conteiner__cocial--list:last-child {
+.cocial-link__list:last-child {
   margin-right: 0;
 }
 
-.conteiner__cocial--item {
+.cocial-link__item {
   display: flex;
   width: 44px;
   height: 44px;
@@ -87,29 +89,29 @@
   transition-timing-function: $cubic;
 }
 
-.conteiner__cocial--item:last-child {
+.cocial-link__item:last-child {
   margin-right: 0;
   padding: 12px;
 }
 
-.conteiner__icon--svg {
+.cocial-link__icon {
   fill: $icon-cocial;
   transition-property: fill;
   transition-duration: $time;
   transition-timing-function: $cubic;
 }
 
-.conteiner__cocial--item:focus {
+.cocial-link__item:focus {
   background-color: $blue-text;
 }
 
-.conteiner__cocial--link .conteiner__cocial--list:hover .conteiner__icon--svg,
-.conteiner__cocial--link .conteiner__cocial--list:focus .conteiner__icon--svg {
+.cocial-link .cocial-link__list:hover .cocial-link__icon,
+.cocial-link .cocial-link__list:focus .cocial-link__icon {
   fill: $white-text;
   transition: opacity 1s, height 1s;
 }
 
-.conteiner__cocial--link .conteiner__cocial--list:hover,
-.conteiner__cocial--link .conteiner__cocial--list:focus {
+.cocial-link .cocial-link__list:hover,
+.cocial-link .cocial-link__list:focus {
   background-color: $blue-text;
 }

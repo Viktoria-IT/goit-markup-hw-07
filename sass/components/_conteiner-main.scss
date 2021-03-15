@@ -1,4 +1,4 @@
-.conteiner__main {
+.container__main {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -8,7 +8,7 @@
   margin-right: auto;
 }
 
-.conteiner__alert {
+.container__alert {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.conteiner__card {
+.container__card {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
@@ -29,14 +29,14 @@
   margin-right: 0;
 }
 
-.conteiner__images {
+.container__images {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
 
   position: relative;
 }
 
-.conteiner__images .conteiner__images--overlay {
+.container__images .container__images--overlay {
   position: absolute;
   width: 100%;
   height: auto;

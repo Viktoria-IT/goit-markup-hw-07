@@ -8,7 +8,7 @@
   color: $black-text;
 }
 
-.conteiner__feature {
+.container__feature {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -17,7 +17,7 @@
   margin-right: auto;
 }
 
-.conteiner__feature--card {
+.container__feature--card {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
@@ -26,7 +26,7 @@
   margin-right: -30px;
 }
 
-.conteiner__feature--item {
+.container__feature--item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 
@@ -41,7 +41,7 @@
   }
 }
 
-.conteiner__feature--info {
+.container__feature--info {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -50,7 +50,7 @@
   color: $pepel-text;
 }
 
-.conteiner__feature--list {
+.container__feature--list {
   display: flex;
   width: 270px;
   height: 120px;
