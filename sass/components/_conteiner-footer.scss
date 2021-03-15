@@ -30,6 +30,10 @@
 }
 
 .address {
+  margin-top: 20px;
+}
+
+.link {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -38,20 +42,24 @@
   color: $white-text;
 }
 
+.address > .address__link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address__link {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-.address__mail {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $white-text;
-}
+// .address__mail {
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 14px;
+//   line-height: 16px;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: $white-text;
+// }
 
 .address__info {
   background: $background-section-one;
