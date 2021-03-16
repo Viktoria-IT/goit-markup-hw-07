@@ -167,6 +167,10 @@ li {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* icon */
 .header {
   border-bottom: 1px solid #ececec;
