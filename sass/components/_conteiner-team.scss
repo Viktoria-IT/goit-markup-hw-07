@@ -1,12 +1,16 @@
-.conteiner-team {
-  width: 1200px;
+.team {
+  background: $background-section-four;
+}
+
+.container-team {
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 94px;
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  background: $background-section-four;
+  // background: $background-section-four;
 }
 
 .text {
@@ -20,7 +24,7 @@
   margin-bottom: 50px;
 }
 
-.team__list {
+.team__item {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -29,7 +33,7 @@
   margin-bottom: 0;
 }
 
-.team__images {
+.team__list {
   width: 270px;
   background: $white-list;
   margin-left: 30px;
@@ -44,7 +48,7 @@
   padding: 30px 32px;
 }
 
-.team__text {
+.team__name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -54,7 +58,7 @@
   margin-bottom: 10px;
 }
 
-.team__card {
+.team__profesion {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -64,54 +68,55 @@
   margin-bottom: 16px;
 }
 
-.cocial-link {
+.cocial__list {
   display: flex;
   padding-left: 0;
 }
 
-.cocial-link__list {
+.cocial__item {
   margin-right: 10px;
   border-radius: 50%;
 }
 
-.cocial-link__list:last-child {
+.cocial__item:last-child {
   margin-right: 0;
 }
 
-.cocial-link__item {
+.cocial__icon {
   display: flex;
   width: 44px;
   height: 44px;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
   transition-property: background-color;
   transition-duration: $time;
   transition-timing-function: $cubic;
 }
 
-.cocial-link__item:last-child {
+.cocial__icon:last-child {
   margin-right: 0;
   padding: 12px;
 }
 
-.cocial-link__icon {
+.cocial__svg {
   fill: $icon-cocial;
   transition-property: fill;
   transition-duration: $time;
   transition-timing-function: $cubic;
 }
 
-.cocial-link__item:focus {
+.cocial__icon:focus {
   background-color: $blue-text;
 }
 
-.cocial-link .cocial-link__list:hover .cocial-link__icon,
-.cocial-link .cocial-link__list:focus .cocial-link__icon {
+.cocial__list .cocial__item:hover .cocial__svg,
+.cocial__list .cocial__item:focus .cocial__svg {
   fill: $white-text;
   transition: opacity 1s, height 1s;
 }
 
-.cocial-link .cocial-link__list:hover,
-.cocial-link .cocial-link__list:focus {
+.cocial__list .cocial__icon:hover,
+.cocial__list .cocial__icon:focus {
   background-color: $blue-text;
 }
