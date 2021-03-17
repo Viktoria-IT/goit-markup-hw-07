@@ -63,11 +63,11 @@
   margin-bottom: 0;
 }
 
-.footer__cocial {
+.cocial__footer {
   margin-left: 70px;
 }
 
-.cocial__info,
+.footer__info,
 .subscribe__text {
   font-style: normal;
   font-weight: bold;
@@ -78,23 +78,23 @@
   color: $white-text;
 }
 
-.cocial__list-info {
+.footer__list {
   display: flex;
   margin-top: 20px;
   padding: 0;
   cursor: pointer;
-  fill: currentColor;
+  // fill: currentColor;
 }
 
-.cocial__list-info:focus .cocial__icons-svg {
+.footer__list:focus .footer__icons {
   color: $blue-text;
 }
 
-.cocial__list-info > .cocial__icon-list:not(:last-child) {
+.footer__list > .footer__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.cocial__icon-list {
+.footer__item {
   padding: 12px;
   margin-right: 10px;
   border-radius: 50%;
@@ -102,7 +102,7 @@
   cursor: pointer;
 }
 
-.cocial__icons-svg {
+.footer__icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,17 +112,17 @@
   transition-timing-function: $cubic;
 }
 
-.cocial__list-info > .cocial__icon-list:hover,
-.cocial__list-info > .cocial__icon-list:focus {
+.footer__list > .footer__item:hover,
+.footer__list > .footer__item:focus {
   background-color: $blue-text;
 }
 
-.cocial__icon-list .cocial__info-link:focus,
-.cocial__icon-list .cocial__info-link:hover {
+.footer__item .footer__link:focus,
+.footer__item .footer__link:hover {
   fill: $blue-text;
 }
 
-.cocial__info-link {
+.footer__link {
   transition-property: backgraund-color;
   transition-duration: $time;
   transition-timing-function: $cubic;

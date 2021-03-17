@@ -160,7 +160,7 @@
   margin-bottom: 0px;
 }
 
-.container-checkbox__label {
+.checkbox__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +170,7 @@
   cursor: pointer;
 }
 
-.container-checkbox__input {
+.checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -184,7 +184,7 @@
   overflow: hidden;
 }
 
-.container-checkbox__icon {
+.checkbox__icon {
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -195,72 +195,23 @@
   transition-duration: $time;
   transition-timing-function: $cubic;
 
-  .container-checkbox__input:focus + & {
+  .checkbox__input:focus + & {
     border-color: $blue-text;
   }
 
-  .container-checkbox__input:checked + & {
+  .checkbox__input:checked + & {
     background-color: $blue-text;
     border-color: $blue-text;
     border: 0px solid transparent;
   }
 }
 
-.container-checkbox__text {
+.checkbox__text {
   color: $blue-text;
   text-decoration: underline;
 }
 
-// .container-checkbox {
-//   margin-bottom: 30px;
-
-//   color: $pepel-text;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 14px;
-//   line-height: 24px;
-//   letter-spacing: 0.03em;
-//   text-align: center;
-// }
-
-// .container-checkbox__text {
-//   display: flex;
-//   text-decoration-line: underline;
-//   color: $blue-text;
-// }
-
-// .label {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   cursor: pointer;
-// }
-
-// .container-checkbox__input:checked + .container-checkbox__icon {
-//   background-color: $blue-text;
-//   background-image: url(../images/iconssvg/symbol-defs.svg#icon-icon-check-1);
-//   background-size: contain;
-//   border-color: $blue-text;
-//   border-radius: 2px;
-//   appearance: none;
-// }
-
-// .container-checkbox__icon {
-//   display: inline-block;
-//   margin-right: 9px;
-//   border: 2px solid $black-text;
-//   fill: $white-text;
-// }
-
-// .container-checkbox__label {
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-//   appearance: none;
-//   position: absolute;
-//   cursor: pointer;
-// }
-
-.container-checkbox__button {
+.checkbox__button {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

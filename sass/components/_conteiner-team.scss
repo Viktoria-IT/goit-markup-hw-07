@@ -24,7 +24,7 @@
   margin-bottom: 50px;
 }
 
-.team__item {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -33,7 +33,7 @@
   margin-bottom: 0;
 }
 
-.team__list {
+.team__item {
   width: 270px;
   background: $white-list;
   margin-left: 30px;
